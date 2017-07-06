@@ -1,0 +1,11 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+    #InsertDataBtn{
+        -fx-background-image: url("C:\Users\solaman\Documents\NetBeansProjects\SmartCrawlerSolo\src\Pics\db.png");
+    -fx-background-repeat: stretch;   
+    }
+}

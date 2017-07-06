@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="AdminContainer" prefHeight="580.0" prefWidth="1179.0" style="-fx-background-radius: 5; -fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smartcrawlersolo.InsertSiteController">
+   <children>
+      <AnchorPane prefHeight="579.0" prefWidth="1177.0">
+         <children>
+            <Pane layoutX="600.0" layoutY="6.0" prefHeight="570.0" prefWidth="577.0" style="-fx-background-color: #e0ffff;" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="6.0">
+               <children>
+                  <Text layoutX="105.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert Site Information">
+                     <font>
+                        <Font name="Vijaya Bold" size="49.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="SiteAdd" focusColor="#2208e4" labelFloat="true" layoutX="57.0" layoutY="156.0" prefHeight="44.0" prefWidth="472.0" promptText="Website">
+                     <font>
+                        <Font name="System Italic" size="25.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="AddBtn" buttonType="RAISED" layoutX="237.0" layoutY="377.0" onAction="#addSite" ripplerFill="#1aff00" style="-fx-border-color: black;" text="Add">
+                     <font>
+                        <Font name="Nyala" size="30.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="Status" layoutX="195.0" layoutY="456.0">
+                     <font>
+                        <Font name="System Italic" size="25.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="Keyword" focusColor="#2208e4" labelFloat="true" layoutX="57.0" layoutY="266.0" prefHeight="44.0" prefWidth="472.0" promptText="Keyword">
+                     <font>
+                        <Font name="System Italic" size="25.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label fx:id="InsertStatus" layoutX="174.0" layoutY="474.0">
+                     <font>
+                        <Font name="System Italic" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox layoutX="51.0" layoutY="33.0" prefHeight="80.0" prefWidth="200.0" style="-fx-border-color: black;">
+               <children>
+                  <ImageView fitHeight="81.0" fitWidth="106.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Pics/admin1.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="BackBtn" buttonType="RAISED" onAction="#goBack" prefHeight="82.0" prefWidth="95.0" style="-fx-border-color: black;" text="Back">
+                     <font>
+                        <Font name="Footlight MT Light" size="27.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

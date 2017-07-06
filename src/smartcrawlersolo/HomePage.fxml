@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1410.0" style="-fx-background-color: #ECF0F1;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smartcrawlersolo.HomePageController">
+   <top>
+      <AnchorPane prefHeight="127.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="108.0" fitWidth="200.0" layoutX="403.0" layoutY="9.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pics/833e318c.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="637.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Smart Crawler">
+               <font>
+                  <Font name="Sakkal Majalla" size="80.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="580.0" prefWidth="217.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton fx:id="HomeBtn" buttonType="RAISED" onAction="#homePage" prefHeight="200.0" prefWidth="232.0" ripplerFill="#4df500" style="-fx-border-color: black; -fx-background-color: #F2F3F4; -fx-background-radius: 5; -fx-border-radius: 5;" text="Home" textFill="#cc0000">
+                     <font>
+                        <Font name="Vijaya Bold" size="45.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow choke="0.43" color="#6b0f0f" height="77.75" radius="38.957499999999996" width="80.08" />
+                     </effect>
+                  </JFXButton>
+                  <AmbientLight color="CHARTREUSE" lightOn="true" />
+                  <JFXButton fx:id="SearchBtn" buttonType="RAISED" onAction="#searchPageBtn" prefHeight="200.0" prefWidth="232.0" ripplerFill="#4df500" style="-fx-border-color: black; -fx-background-color: #F2F3F4; -fx-background-radius: 5; -fx-border-radius: 5;" text="Search" textFill="#cc0000">
+                     <font>
+                        <Font name="Vijaya Bold" size="45.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow choke="0.43" color="#6b0f0f" height="77.75" radius="38.957499999999996" width="80.08" />
+                     </effect>
+                  </JFXButton>
+                  <JFXButton fx:id="AdminBtn" buttonType="RAISED" onAction="#adminBtn" prefHeight="200.0" prefWidth="232.0" ripplerFill="#4df500" style="-fx-border-color: black; -fx-background-color: #F2F3F4; -fx-background-radius: 5; -fx-border-radius: 5;" text="Admin" textFill="#cc0000">
+                     <font>
+                        <Font name="Vijaya Bold" size="45.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow choke="0.43" color="#6b0f0f" height="77.75" radius="38.957499999999996" width="80.08" />
+                     </effect>
+                  </JFXButton>
+                  <JFXButton fx:id="AboutBtn" buttonType="RAISED" onAction="#aboutPage" prefHeight="200.0" prefWidth="232.0" ripplerFill="#4df500" style="-fx-border-color: black; -fx-background-color: #F2F3F4; -fx-background-radius: 5; -fx-border-radius: 5;" text="About Us" textFill="#cc0000">
+                     <font>
+                        <Font name="Vijaya Bold" size="45.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow choke="0.43" color="#6b0f0f" height="77.75" radius="38.957499999999996" width="80.08" />
+                     </effect>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <bottom>
+      <AnchorPane prefHeight="93.0" prefWidth="1200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="Changing" layoutX="7.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 5; -fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="415.0" fitWidth="477.0" layoutX="382.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pics/bot124.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="268.0" fitWidth="369.0" layoutX="49.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pics/data-mining.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="382.0" fitWidth="779.0" layoutX="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pics/crwl.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="462.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+                     <font>
+                        <Font name="Forte" size="77.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

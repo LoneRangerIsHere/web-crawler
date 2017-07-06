@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<Pane prefHeight="580.0" prefWidth="1179.0" style="-fx-background-radius: 5; -fx-border-color: black; -fx-border-width: 5; -fx-border-radius: 5;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smartcrawlersolo.SearchController">
+   <children>
+      <AnchorPane prefHeight="579.0" prefWidth="1177.0" style="-fx-border-color: #4169e1;">
+         <children>
+            <SplitPane dividerPositions="0.5004269854824936" layoutX="6.0" layoutY="6.0" prefHeight="569.0" prefWidth="1170.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="5.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <AnchorPane layoutY="-3.0" prefHeight="35.0" prefWidth="582.0" style="-fx-background-color: #90ee90;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0">
+                           <children>
+                              <JFXButton fx:id="QuerySearchBtn" buttonType="RAISED" layoutX="491.0" layoutY="18.0" onAction="#Search" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #ff4500; -fx-background-radius: 10;" text="Search">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font></JFXButton>
+                              <TextField fx:id="QueryBox" layoutX="14.0" layoutY="29.0" prefHeight="37.0" prefWidth="458.0" promptText="Enter Query" style="-fx-background-radius: 10; -fx-border-color: red; -fx-border-radius: 10;" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="15.0">
+                                 <font>
+                                    <Font name="System Italic" size="16.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </AnchorPane>
+                        <Text fill="#6d07d3" layoutX="14.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Results:" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="77.0146484375">
+                           <font>
+                              <Font name="Vijaya" size="35.0" />
+                           </font>
+                        </Text>
+                        <JFXListView fx:id="ResultField" layoutX="14.0" layoutY="116.0" prefHeight="459.0" prefWidth="582.0" style="-fx-background-color: black];" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="116.0" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-border-color: black; -fx-border-radius: 10;">
+                     <children>
+                        <WebView fx:id="Browser" layoutX="36.0" layoutY="29.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
