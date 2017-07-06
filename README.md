@@ -5,8 +5,8 @@ Here we need to crawl a webpage for a keyword before hand to populate the databa
 You have manual as well as automatic crawl option.
 In manual crawl your are supposed to give the seed site along with the keyword.
 In auto crawl only keyword need to be given provided that your data base has some site related to that keyword, our crawler automatically fetches that site from the database as the seed site.
-need to create a database name info and table frontier
-table fronter has the following entries:
+need to create a database name info and table frontier, 
+table frontier has the following entries:
 
 site - varchar (unique)
 
